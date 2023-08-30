@@ -66,6 +66,28 @@ function checkAge(name, age){
   analyzePoint(-6, 18);  
 
 
+  //EX 4 
+
+  function analyzeTriangle(side1, side2, side3) {
+    if (side1 + side2 <= side3 || side1 + side3 <= side2 || side2 + side3 <= side1) {
+      return "The sides do not form a valid triangle.";
+    } else if (side1 === side2 && side2 === side3) {
+      return "The sides form an equilateral triangle.";
+    } else if (side1 === side2 || side1 === side3 || side2 === side3) {
+      return "The sides form an isosceles triangle.";
+    } else {
+      return "The sides form a scalene triangle.";
+    }
+  }
+  
+
+  console.log(analyzeTriangle(1, 2, 2)); 
+  console.log(analyzeTriangle(1, 1, 2));   
+  console.log(analyzeTriangle(3, 3, 3));   
+  console.log(analyzeTriangle(4, 5, 4));   
+  console.log(analyzeTriangle(5, 12, 13)); 
+  
+
 
 
 
